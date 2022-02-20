@@ -1,6 +1,15 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.9;
 
+import "/common/implementation/FixedPoint.sol";
+import "/common/implementation/AddressWhitelist.sol";
+import "/common/implementation/Testable.sol";
+import "/common/implementation/Lockable.sol";
+
+import "/oracle/interfaces/FinderInterface.sol";
+import "/oracle/interfaces/IdentifierWhitelistInterface.sol";
+import "/oracle/interfaces/OptimisticOracleInterface.sol";
+
 contract Communicator {
     // STORAGE
     string public readableBlockTime;
