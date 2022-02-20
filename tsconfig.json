@@ -1,6 +1,10 @@
 {
-    "compilerOptions": {
-        "resolveJsonModule": true,
-        "esModuleInterop": true
-    }
+  "extends": "@tsconfig/node14/tsconfig.json",
+  "esModuleInterop": true,
+  "include": ["contract-types/**/*.ts", "index.ts", "browser.ts", "src/**/*.ts"],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "declaration": true,
+    "declarationDir": "./types"
+  }
 }
